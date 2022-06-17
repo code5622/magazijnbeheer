@@ -1,0 +1,57 @@
+.menubar { 
+    display: flex;
+    align-items: flex-start;    
+    position: relative;
+    top: 0;
+    z-index: 2;
+    min-width: inherit;   
+    height: $menubar-height;  
+    padding-top: .5rem;
+    padding-left: .5rem;
+    background-color: $color-primary-dark;
+    font-family: Oswald;
+    font-weight: bolder;
+
+    &__menu {  
+        margin-right: 1.5rem;
+        color: grey;
+    }
+    
+    &__button {
+
+    }
+} 
+
+.menubar__close {
+    display: none;
+}
+
+
+
+
+
+
+// .navbar__buttons:hover {
+//     background-color: purple;
+// }
+
+// .navbar__buttons {
+//     display: inline-block;
+// }
+
+// .navbar__buttons:hover::after{
+//     content: attr(tooltip);
+//     font-size: 1.2rem;
+//     font-weight: normal;
+//     display: block;
+//     position: absolute;
+
+//     bottom: -50px;
+//     left: 60px;
+//     color: #fff;
+//     background-color: #E6007E;
+//     //width: 20em;
+//     padding: 1rem;
+//     //text-align: center;
+//     z-index: 9999999999999999999999999999999999999999999999999999999;
+// }

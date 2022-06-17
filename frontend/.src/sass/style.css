@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 12px;
+  background-color: #23272a; }
+
+body {
+  font-family: 'sans-serif';
+  font-size: 1.6rem;
+  padding: 3rem;
+  background-color: #23272a; }
+
+.Menu {
+  background-color: purple;
+  position: "fixed";
+  color: "#fff";
+  width: "100%"; }

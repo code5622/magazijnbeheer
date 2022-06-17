@@ -1,0 +1,108 @@
+.tabpanel {
+    box-sizing: border-box; 
+    overflow: auto;
+    
+    &__tabs {
+        display: flex;
+        height: $tabpanel-tabs-height; 
+    }
+
+    &__tabs--left { 
+        justify-content: flex-start;             
+    }     
+
+    &__tabs--right {          
+        justify-content: flex-end               
+    }  
+
+    &__tab {
+        display: flex;
+        justify-content: center;    
+        border: $tabpanel-tabs-border;
+        border-top-left-radius: 1.5rem; 
+    }  
+
+    &__main {
+        box-sizing: border-box;
+        border: $tabpanel-main-border;     
+    }
+
+    &__link {
+        display: inline-block;  
+        padding: .5 .5 0 .5;
+        color: darkgrey;
+        font-size: 1.5rem;
+        text-decoration: none;
+        transform: translateY(-30%);
+    }  
+
+    &__link:hover:not(&__activetab) {
+        background-color: transparent;
+        transform: scale(1.1) translateY(-30%);
+        font-weight: bolder;
+        color: $color-grey-dark;
+    }    
+    
+    &__activetab {
+        color: #fff;
+        font-weight: bolder;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }   
+    
+    &__content {
+        position: relative;
+        top: 0rem;  
+        left: 0rem;
+        overflow: hidden;
+        background-color: #23272a;  
+    }
+
+    &__menutoolbarbutton {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        width: 2rem;
+        margin: 0 .5rem;
+        border: none; 
+        background-color: transparent;
+ 
+        &__icon {
+            color: #fff;        
+        }
+
+        &--left {
+            order: 0;
+        }
+             
+        &--right,
+        &--top,
+        &--bottom {         
+            order: 1;
+        }  
+        
+        &--top,
+        &--bottom {
+            margin-left: auto;   
+        }           
+    }     
+}
+
+@keyframes fadeInTabPanel {
+    0% {
+        opacity: 0;
+        transform: translateX(-3rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }    
+
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+

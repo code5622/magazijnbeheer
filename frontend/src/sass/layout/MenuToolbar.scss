@@ -1,0 +1,232 @@
+.menutoolbar {  
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    
+    ///////////// Layout ////////////////////////////////////////////////////////
+    &__top {
+        border-bottom: $menutoolbar-border-bottom;
+
+        &--open {
+            animation: fadeInTop .3s ease-in;
+            animation-fill-mode: backwards; 
+        }
+        
+        &--close {
+            animation: fadeOutTop .3s ease-out;
+            animation-fill-mode: forwards;        
+        }
+        
+        &--center {
+            justify-content: space-around;
+        }
+    } 
+
+    &__right {
+        border-left: $menutoolbar-border-left;
+
+        &--open {
+            animation: fadeInRight .3s ease-in;
+            animation-fill-mode: backwards; 
+        }
+        
+        &--close {
+            animation: fadeOutRight .3s ease-out;
+            animation-fill-mode: forwards;        
+        }          
+    }   
+    
+    &__bottom { 
+        border: none;   
+
+        &--open {
+            animation: fadeInBottom .3s ease-in;
+            animation-fill-mode: backwards; 
+        }
+        
+        &--close {
+            animation: fadeOutBottom .3s ease-out;
+            animation-fill-mode: forwards;        
+        }        
+    }       
+
+    &__left {
+        border-right: $menutoolbar-border-right;
+
+        &--open {
+            animation: fadeInLeft .3s ease-in;
+            animation-fill-mode: backwards; 
+        }
+        
+        &--close {
+            animation: fadeOutLeft .6s ease-out;
+            animation-fill-mode: forwards;        
+        }        
+    }
+
+    &__top,
+    &__left {
+        order: 0;
+    }    
+    
+    &__right,
+    &__bottom {
+        order: 1;
+    }
+
+    &__top,
+    &__bottom {
+        align-items: center;  
+        height: $menutoolbar-height;
+    }     
+
+    &__left,
+    &__right {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;        
+        width: $menutoolbar-width; 
+        padding-top: 1rem;     
+    } 
+
+    ///////////// Navigation ////////////////////////////////////////////////////
+    &__navigation {
+        display: flex;
+        align-self: center;
+        position: relative;
+        align-self: flex-end;
+        
+        &--left,
+        &--right {
+            align-self: center;
+            padding-left: 1.5rem;
+        }
+ 
+        &--top {
+            margin-left: auto; 
+        }
+
+        &--top,
+        &--bottom {
+            align-self: center;
+        }
+    }
+
+    &__arrowbutton,
+    &__menubutton {
+        margin-right: .75rem;
+        border: none;
+        background-color: transparent;
+
+        &--right {
+            order: -1;
+        }
+      
+        &__icon {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__arrowbutton__icon {
+        color: $color-grey;                         
+    } 
+    
+    &__menubutton__icon {
+        color: $color-dark-pink;
+    }
+
+    &__dropdown {
+        display: flex; 
+        flex-direction: column;
+        list-style-type: none;   
+
+        &__item {
+            display: flex;
+            align-items: center;
+            position: relative;    
+            
+            &:hover {
+                background-color: $color-dark-pink;                
+            }             
+        }
+
+        &__button {
+            width: 100%;
+            padding: .5rem;
+            padding-left: 1rem;            
+            border: none;
+            background-color: transparent;
+            color: $color-white;
+            text-align: left;                
+        }  
+
+        &__icon {  
+            position: absolute;   
+            top: 50%;
+            right: 10%;       
+            transform: translateY(-50%); 
+            color: $color-dark-pink;                    
+            font-size: 1.2rem;     
+        }   
+             
+        &__item:hover > &__button,
+        &__item:hover > &__icon {
+            color: $color-white;
+            font-weight: bolder;
+        }         
+    }         
+
+    ////////////// ActionButtons /////////////////////////////////////////
+    &__actionbuttons {
+        list-style-type: none;
+   
+        &--left,
+        &--top {
+            order: 0;
+        }
+
+        &--bottom,
+        &--top {
+            display: flex;
+            flex-direction: row;
+            order: -1;
+        }  
+
+        &--bottom {
+            justify-content: center;
+            margin: 0 auto;
+        }        
+        
+        &--left,
+        &--right {
+            padding-top: 1rem;
+        }
+    }
+
+    &__actionbutton {
+        padding: 1rem; 
+        list-style-type: none;
+        &--bottom {
+            padding: 0 4rem;
+        }
+        
+        &__link {
+            text-decoration: none;      
+            color: grey;
+            font-size: 1.8rem;
+            
+            &:hover {
+                transform: scale(1.2);
+                background-color: inherit;
+                color: $color-grey-dark;
+            }
+        }         
+
+        &__isactive {
+            color: $color-white;
+        }         
+    }  
+}
+
+
+

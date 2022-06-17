@@ -1,0 +1,40 @@
+.listitem {
+    position: absolute;
+    z-index: 500;
+    background-color: #23272a; 
+    /* width: 10%; */
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 12px;
+    /* right: 0%;
+    top: 0%; */
+    box-sizing: border-box;
+    color: blue;
+    text-align: left; 
+    //overflow-y: auto;     
+    
+
+    &__animation {
+        animation: fadeInListItem .3s ease-in;
+   
+        &__bottom {
+            animation: fadeInListItemBottom .3s ease-in;
+        }
+    }
+
+    /* width: 15%;
+    top: 125%;
+    right: 5%; */
+    /* left: 15%;     */
+}
+
+/*  
+@media (min-width: 600px) {
+    .Modal {
+        width: 50%;
+        top: 24%;
+        left: calc(53% - 250px);
+    }
+} */
+
+

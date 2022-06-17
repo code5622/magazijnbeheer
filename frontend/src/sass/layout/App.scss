@@ -1,0 +1,12 @@
+.mainlayout {
+  display: flex;
+  border-top: 2px solid #000;
+    
+    &__row {  
+        flex-direction: row;
+    }
+
+    &__column {
+        flex-direction: column;
+    }
+}

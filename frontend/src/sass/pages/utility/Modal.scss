@@ -1,0 +1,46 @@
+.Modal {
+    position: absolute;
+    z-index: 999999999999999999999999999999999999999999999999;
+    background-color: #23272a; 
+    /* width: 10%; */
+    border: 1px solid grey;
+    box-shadow: 1px 1px 1px black;
+    padding: 12px;
+    /* right: 0%;
+    top: 0%; */
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    color: #fff;
+    text-align: left;
+    animation: fadeInDropDown .6s ease-in;
+
+    /* width: 15%;
+    top: 125%;
+    right: 5%; */
+    /* left: 15%;     */
+}
+
+/*  
+@media (min-width: 600px) {
+    .Modal {
+        width: 50%;
+        top: 24%;
+        left: calc(53% - 250px);
+    }
+} */
+
+@keyframes fadeInDropDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+
+    80% {
+        transform: translateY(2rem);
+    }    
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}

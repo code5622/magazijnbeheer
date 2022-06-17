@@ -1,0 +1,90 @@
+.btn-paginate {
+    border: none;
+    /*display: inline-block;*/
+    width: 30px !important;
+    height: 30px;
+    background-color: #fff;
+    color: #23272a;
+    font-size: 10px;
+    border-radius: 50%; 
+    padding: .3rem; 
+}
+
+.btn-paginate:hover {
+    opacity: 0.5;
+}
+
+.PageNumber {
+  display: inline;
+  background-color:#E6007E !important;
+}
+
+.PageData {
+  width: '100px';
+  color: #fff;
+  cursor: cursor;
+  text-align: left;
+  border: none !important;
+}
+
+.InputPage {
+  background-color: #E6007E;
+  opacity: 0.8;
+  color: #fff ;
+  border: none;
+  outline: none;
+  width: '20px';  
+}
+
+.InputPage:focus {
+  background-color: #E6007E;  
+  opacity: 1.0;
+  color: #fff ;
+  border: none;
+  outline: none;
+  width: '40px';
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropup {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #E6007E;
+    min-width: 160px;
+    bottom: 22px;
+    z-index: 1;
+  }
+  
+  .dropup-content a {
+    color: #fff;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropup-content a:hover {background-color: #ccc}
+  
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+  
+  .dropup:hover {
+    opacity: 0.95;
+  }
+
+
+  .dropup:hover .dropbtn {
+    background-color: #2980B9;   
+  }

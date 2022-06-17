@@ -1,0 +1,33 @@
+.SortColumn,
+.SortDirection {
+    margin-right: .75rem;
+}  
+
+div.SortColumn,
+select.select-sortColumns {
+    width: 15.4rem;
+}
+
+
+div.SortDirection,
+select.select-sortDirections {
+    width: 10rem;
+}
+
+div.SortRemoveBtn {
+    border: none;
+    background-color: #575757;
+    margin: 0;
+    padding: 0;   
+    height: 2rem;
+    width: 2rem;
+}
+
+.SortRemoveBtn {
+    outline: none;
+    border: none;
+    color: #fff;  
+    background-color: #E6007E;
+    height: 2rem;
+    width: 2rem; 
+}

@@ -1,0 +1,45 @@
+.filterform {
+    margin-bottom: 1rem;
+}
+
+.filterrow {
+    display: flex;
+    margin-bottom: .5rem;
+
+    &__formelement {
+        height: 2rem;
+        margin-right: .7rem; 
+        font-size: 1.4rem;         
+    }
+
+    &__select select {
+        width: inherit;
+        height: inherit;
+        border: none;        
+        background-color: #E6007E;   
+        color: #fff;
+    }
+
+    &__button {
+        width: 2rem;
+        height: inherit;
+        border: none;
+        background-color: #E6007E;
+        color: white;
+        text-decoration: none;   
+        list-style: none; 
+        text-align: center;         
+    }
+
+    &__filtervalue input[type='text'] {
+        height: inherit;
+        margin: 0;
+        border: none;
+        background-color: grey;   
+    }
+
+    &__filtervalue input[type='text']:focus {
+        outline: none;
+        background-color: lightgrey;
+    }    
+}
